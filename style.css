@@ -1,0 +1,100 @@
+/* Mengatur Body */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    color: #333;
+}
+
+/* Papan Game */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/* Cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect pada cell */
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+/* Status Text */
+#status {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Tombol Restart */
+.restart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.restart-btn:hover {
+    background-color: #45a049;
+}
+
+/* Untuk tampilan animasi saat ada pemenang */
+.winner {
+    color: #ff6347;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Membuat efek saat memilih sel */
+.cell:active {
+    background-color: #ddd;
+}
+
+/* Papan dengan border */
+#board {
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+/* Efek ketika status menunjukkan pemenang */
+.winner-text {
+    color: #ff6347;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#scoreboard {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
